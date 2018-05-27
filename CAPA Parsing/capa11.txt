@@ -1,0 +1,62 @@
+Harsh Gupta ▼
+(Student)
+LON-CAPA Logo
+Messages
+Courses
+Help
+Logout
+Phys 1E03 (Winter 2018)
+Main MenuContentsGrades
+      ◄  TimerTimer   Notes tationsNotes  Evaluate thisEvaluate  Feedback discussFeedback  Print printoutPrint  Info infoInfo
+Course Contents » ... » Assignments » Assignment 11
+ Show MetadataProvide my evaluation of this resource
+Two sinusoidal waves traveling in opposite directions interfere to produce a standing wave described by the equation y=(1.90m)sin(0.386x)cos(245t) where x is in meters and t is in seconds. Determine the wavelength of the interfering waves.
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+(7) A stretched wire vibrates in its fundamental mode at a frequency of 450 Hz. What would be the fundamental frequency if the wire were half as long, its diameter were doubled, and its tension were increased two-fold?
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+(12a) In the arrangement shown in the figure, a mass can be hung from a string (with a linear mass density of μ = 0.00165 kg/m) that passes over a light pulley. The string is connected to a vibrator (of constant frequency f), and the length of the string between point P and the pulley is L = 1.54 m. When the mass m is either 15.3 kg or 20.8 k g, standing waves are observed; however no standing waves are observed with any mass between these values. What is the frequency of the vibrator? (Hint: The greater the tension in the string the smaller the number of nodes in the standing wave.)
+ 	Tries 0/10
+
+Serway-Beichner Chapter 18 Images
+(12b) What is the largest mass for which standing waves could be observed?
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+Two identical sinusoidal waves with wavelengths of 3.45m travel in the same direction at a speed of 1.37m/s. The second wave originates from the same point as the first, but at a later time. Determine the minimum possible time interval between the starting moments of the two waves if the amplitude of the resultant wave is the same as that of each of the two initial waves.
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+Two speakers are driven by the same oscillator with frequency of 196Hz. They are located 3.52m apart on a vertical pole. A man really far away walks straight toward the lower speaker in a direction perpendicular to the pole, as shown in the figure. How far is he from the pole at the first moment he hears a minimum in sound intensity (short of infinity) if the speed of sound is 330m/s?
+ 	Tries 0/10
+Serway-Beichner Chapter 18 Images
+Show MetadataProvide my evaluation of this resource
+(5a) What is the longest wavelength for standing waves on a 612.0 cm long string that is fixed at both ends?
+ 	Tries 0/10
+(5b) What is the second longest wavelength for standing waves?
+ 	Tries 0/10
+(5c) What is the third longest wavelength for standing waves?
+ 	Tries 0/10
+(5d) If the frequency of the second-longest wavelength is 60.6 Hz, what is the frequency of the third longest wavelength?
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+(4) A heavy piece of hanging sculpture is suspended by a 100.6 cm long, 6.57 g steel wire. When the wind blows hard, the wire hums at its fundamental frequency of 89.1 Hz. What is the mass of the sculpture?
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+Two loudspeakers emit sound waves of the same frequency along the x-axis. The amplitude of each wave is A. The sound intensity is minimum when speaker 2 is 47.1cm behind speaker 1. The intensity increases as speaker 2 is moved forward and first reaches maximum, with amplitude 2A, when it is 78.0cm in front of speaker 1. What is the wavelength of the sound?
+ 	Tries 0/10
+What is the phase difference between the two loudspeakers?
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+One cue your hearing system uses to localize a sound (i.e., to tell where a sound is coming from) is the slight difference in the arrival times of the sound at your ears. Your ears are spaced approximately 19.5cm apart. Consider a sound source 6.32m from the center of your head along a line 93.7° to your right. What is the difference in arrival times? Assume the velocity of sound is 343.0m/s.
+ 	Tries 0/10
+Show MetadataProvide my evaluation of this resource
+As the drawing shows, one microphone is located at the origin, and a second microphone is located on the +y axis. The microphones are separated by a distance of D = 1.13 m. A source of sound is located on the +x axis its distance from the microphones 1 and 2 being L1 and L2 respectively. The speed of sound is 343 m/s. The sound reaches microphone 1 first, and then, 1.07 ms later, it reaches microphone 2. Find the distances L1 and L2.
+
+ 	Tries 0/10
+
+ 	Tries 0/10
+1642-diagram.jpg
+Show MetadataProvide my evaluation of this resource
+A typical adult ear has a surface area of 2.27E-3 m2. The sound intensity during a normal conversation is about 3.19E-6 W/m2 at the listener's ear. Assume that the sound strikes the surface of the ear perpendicularly. How much power is intercepted by the ear?
+ 	Tries 0/10
+ Post Discussion Send Feedback

@@ -1,0 +1,1946 @@
+
+/* needed for iframe to allow 100% height in FF */
+body, html { 
+    margin: 0;
+    padding: 0 0.5%;
+    height: 99%; /* to avoid scrollbars */
+}
+
+body {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  line-height:130%;
+  font-size:0.83em;
+  color:#000000;
+}
+
+a:focus,
+a:focus img {
+  color: red;
+}
+
+form, .inline {
+  display: inline;
+}
+
+.LC_right {
+  text-align:right;
+}
+
+.LC_middle {
+  vertical-align:middle;
+}
+
+.LC_floatleft {
+  float: left;
+}
+
+.LC_floatright {
+  float: right;
+}
+
+.LC_400Box {
+  width:400px;
+}
+
+.LC_iframecontainer {
+    width: 98%;
+    margin: 0;
+    position: fixed;
+    top: 8.5em;
+    bottom: 0;
+}
+
+.LC_iframecontainer iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.LC_filename {
+  font-family: monospace;
+  white-space:pre;
+  font-size: 120%;
+}
+
+.LC_fileicon {
+  border: none;
+  height: 1.3em;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+  text-decoration:none;
+}
+
+.LC_setting {
+  text-decoration:underline;
+}
+
+.LC_error {
+  color: red;
+}
+
+.LC_warning {
+  color: darkorange;
+}
+
+.LC_diff_removed {
+  color: red;
+}
+
+.LC_info,
+.LC_success,
+.LC_diff_added {
+  color: green;
+}
+
+div.LC_confirm_box {
+  background-color: #FAFAFA;
+  border: 1px solid #C8C8C8;
+  margin-right: 0;
+  padding: 5px;
+}
+
+div.LC_confirm_box .LC_error img,
+div.LC_confirm_box .LC_success img {
+  vertical-align: middle;
+}
+
+.LC_maxwidth {
+  max-width: 100%;
+  height: auto;
+}
+
+.LC_textsize_mobile {
+  @media only screen and (max-device-width: 480px) {
+      -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%;
+  }
+}
+
+.LC_icon {
+  border: none;
+  vertical-align: middle;
+}
+
+.LC_docs_spacer {
+  width: 25px;
+  height: 1px;
+  border: none;
+}
+
+.LC_internal_info {
+  color: #999999;
+}
+
+.LC_discussion {
+  background: #E0E0E0;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.LC_disc_action_left {
+  background: #E5E5FF;
+  text-align: left;
+  padding: 4px;
+  margin: 2px;
+}
+
+.LC_disc_action_right {
+  background: #E5E5FF;
+  text-align: right;
+  padding: 4px;
+  margin: 2px;
+}
+
+.LC_disc_new_item {
+  background: white;
+  border: 2px solid red;
+  margin: 4px;
+  padding: 4px;
+}
+
+.LC_disc_old_item {
+  background: white;
+  margin: 4px;
+  padding: 4px;
+}
+
+table.LC_pastsubmission {
+  border: 1px solid black;
+  margin: 2px;
+}
+
+table#LC_menubuttons {
+  width: 100%;
+  background: #FFFFFF;
+  border: 2px;
+  border-collapse: separate;
+  padding: 0;
+}
+
+table#LC_title_bar a {
+  color: #11063D;
+}
+
+table#LC_title_bar {
+  clear: both;
+  display: none;
+}
+
+table#LC_title_bar,
+table.LC_breadcrumbs, /* obsolete? */
+table#LC_title_bar.LC_with_remote {
+  width: 100%;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 0 3px 0 4px;
+  background: #FFFFFF;
+  color: #11063D;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+}
+
+ul.LC_breadcrumb_tools_outerlist {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+ul.LC_breadcrumb_tools_outerlist li {
+    display: inline;
+}
+
+.LC_breadcrumb_tools_navigation {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.LC_breadcrumb_tools_tools {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+table#LC_title_bar td {
+  background: #77B7F8;
+}
+
+table#LC_menubuttons img {
+  border: none;
+}
+
+.LC_breadcrumbs_component {
+  float: right;
+  margin: 0 1em;
+}
+.LC_breadcrumbs_component img {
+  vertical-align: middle;
+}
+
+.LC_breadcrumbs_hoverable {
+  background: #E5E5FF;
+}
+
+td.LC_table_cell_checkbox {
+  text-align: center;
+}
+
+.LC_fontsize_small {
+  font-size: 70%;
+}
+
+#LC_breadcrumbs {
+  clear:both;
+  background: #E5E5FF;
+  border-bottom: 1px solid #C8C8C8;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.LC_head_subbox, .LC_actionbox {
+  clear:both;
+  background: #F8F8F8; /* #E5E5FF; */
+  border: 1px solid #E5E5FF;
+  margin: 0 0 10px 0;
+  padding: 3px;
+  text-align: left;
+}
+
+.LC_fontsize_medium {
+  font-size: 85%;
+}
+
+.LC_fontsize_large {
+  font-size: 120%;
+}
+
+.LC_menubuttons_inline_text {
+  color: #000000;
+  font-size: 90%;
+  padding-left:3px;
+}
+
+.LC_menubuttons_inline_text img{
+  vertical-align: middle;
+}
+
+li.LC_menubuttons_inline_text img {
+  cursor:pointer;
+  text-decoration: none;
+}
+
+.LC_menubuttons_link {
+  text-decoration: none;
+}
+
+.LC_menubuttons_category {
+  color: #000000;
+  background: #FFFFFF;
+  font-size: larger;
+  font-weight: bold;
+}
+
+td.LC_menubuttons_text {
+  color: #000000;
+}
+
+.LC_current_location {
+  background: #77B7F8;
+}
+
+table.LC_data_table {
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  background: #FFFFFF;
+}
+
+.LC_data_table_dense {
+  font-size: small;
+}
+
+table.LC_nested_outer {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.LC_innerpickbox,
+table.LC_nested {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.LC_data_table tr th,
+table.LC_calendar tr th,
+table.LC_prior_tries tr th,
+table.LC_innerpickbox tr th {
+  font-weight: bold;
+  background-color: #E5E5FF;
+  color:#11063D;
+  font-size:90%;
+}
+
+table.LC_innerpickbox tr th,
+table.LC_innerpickbox tr td {
+  vertical-align: top;
+}
+
+table.LC_data_table tr.LC_info_row > td {
+  background-color: #CCCCCC;
+  font-weight: bold;
+  text-align: left;
+}
+
+table.LC_data_table tr.LC_odd_row > td {
+  background-color: #FAFAFA;
+  padding: 2px;
+  vertical-align: top;
+}
+
+table.LC_pick_box tr > td.LC_odd_row {
+  background-color: #FAFAFA;
+  vertical-align: top;
+}
+
+table.LC_data_table tr.LC_even_row > td {
+  background-color: #E0E0E0;
+  padding: 2px;
+  vertical-align: top;
+}
+
+table.LC_pick_box tr > td.LC_even_row {
+  background-color: #E0E0E0;
+  vertical-align: top;
+}
+
+table.LC_data_table tr.LC_data_table_highlight td {
+  background-color: #CCCCCC;
+}
+
+table.LC_data_table tr td.LC_leftcol_header {
+  background-color: #E5E5FF;
+  font-weight: bold;
+}
+
+table.LC_data_table tr.LC_empty_row td,
+table.LC_nested tr.LC_empty_row td {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding: 8px;
+}
+
+table.LC_data_table tr.LC_empty_row td,
+table.LC_data_table tr.LC_footer_row td {
+  background-color: #E5E5FF;
+}
+
+table.LC_nested tr.LC_empty_row td {
+  background-color: #FFFFFF;
+}
+
+table.LC_caption {
+}
+
+table.LC_nested tr.LC_empty_row td {
+  padding: 4ex
+}
+
+table.LC_nested_outer tr th {
+  font-weight: bold;
+  color:#11063D;
+  background-color: #E5E5FF;
+  font-size: small;
+  border-bottom: 1px solid #000000;
+}
+
+table.LC_nested_outer tr td.LC_subheader {
+  background-color: #E5E5FF;
+  font-weight: bold;
+  font-size: small;
+  border-bottom: 1px solid #000000;
+  text-align: right;
+}
+
+table.LC_nested tr.LC_info_row td {
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+}
+
+table.LC_nested tr.LC_info_row td.LC_left_item,
+table.LC_nested_outer tr th.LC_left_item {
+  text-align: left;
+}
+
+table.LC_nested td {
+  background-color: #FFFFFF;
+  font-size: small;
+}
+
+table.LC_nested_outer tr th.LC_right_item,
+table.LC_nested tr.LC_info_row td.LC_right_item,
+table.LC_nested tr.LC_odd_row td.LC_right_item,
+table.LC_nested tr td.LC_right_item {
+  text-align: right;
+}
+
+table.LC_nested tr.LC_odd_row td {
+  background-color: #EEEEEE;
+}
+
+table.LC_createuser {
+}
+
+table.LC_createuser tr.LC_section_row td {
+  font-size: small;
+}
+
+table.LC_createuser tr.LC_info_row td  {
+  background-color: #CCCCCC;
+  font-weight: bold;
+  text-align: center;
+}
+
+table.LC_calendar {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 98%;
+}
+
+table.LC_calendar_pickdate {
+  font-size: xx-small;
+}
+
+table.LC_calendar tr td {
+  border: 1px solid #000000;
+  vertical-align: top;
+  width: 14%;
+}
+
+table.LC_calendar tr td.LC_calendar_day_empty {
+  background-color: #E0E0E0;
+}
+
+table.LC_calendar tr td.LC_calendar_day_current {
+  background-color: #FFFF00;
+}
+
+table.LC_data_table tr td.LC_mail_new {
+  background-color: #FFBB77;
+}
+
+table.LC_data_table tr.LC_mail_new:hover {
+  background-color: #DD9955;
+}
+
+table.LC_data_table tr td.LC_mail_read {
+  background-color: #BBBB77;
+}
+
+/*
+table.LC_data_table tr.LC_mail_read:hover {
+  background-color: #999944;
+}
+*/
+
+table.LC_data_table tr td.LC_mail_replied {
+  background-color: #AAAA88;
+}
+
+/*
+table.LC_data_table tr.LC_mail_replied:hover {
+  background-color: #888855;
+}
+*/
+
+table.LC_data_table tr td.LC_mail_other {
+  background-color: #99BBBB;
+}
+
+/*
+table.LC_data_table tr.LC_mail_other:hover {
+  background-color: #669999;
+}
+*/
+
+table.LC_data_table tr > td.LC_browser_file,
+table.LC_data_table tr > td.LC_browser_file_published {
+  background: #AAEE77;
+}
+
+table.LC_data_table tr > td.LC_browser_file_locked,
+table.LC_data_table tr > td.LC_browser_file_unpublished {
+  background: #FFAA99;
+}
+
+table.LC_data_table tr > td.LC_browser_file_obsolete {
+  background: #888888;
+}
+
+table.LC_data_table tr > td.LC_browser_file_modified,
+table.LC_data_table tr > td.LC_browser_file_metamodified {
+  background: #F8F866;
+}
+
+table.LC_data_table tr.LC_browser_folder > td {
+  background: #E0E8FF;
+}
+
+table.LC_data_table tr > td.LC_roles_is {
+  /* background: #77FF77; */
+}
+
+table.LC_data_table tr > td.LC_roles_future {
+  border-right: 8px solid #FFFF77;
+}
+
+table.LC_data_table tr > td.LC_roles_will {
+  border-right: 8px solid #FFAA77;
+}
+
+table.LC_data_table tr > td.LC_roles_expired {
+  border-right: 8px solid #FF7777;
+}
+
+table.LC_data_table tr > td.LC_roles_will_not {
+  border-right: 8px solid #AAFF77;
+}
+
+table.LC_data_table tr > td.LC_roles_selected {
+  border-right: 8px solid #11CC55;
+}
+
+span.LC_current_location {
+  font-size:larger;
+  background: #FFFFFF;
+}
+
+span.LC_current_nav_location {
+  font-weight:bold;
+  background: #E5E5FF;
+}
+
+span.LC_parm_menu_item {
+  font-size: larger;
+}
+
+span.LC_parm_scope_all {
+  color: red;
+}
+
+span.LC_parm_scope_folder {
+  color: green;
+}
+
+span.LC_parm_scope_resource {
+  color: orange;
+}
+
+span.LC_parm_part {
+  color: blue;
+}
+
+span.LC_parm_folder,
+span.LC_parm_symb {
+  font-size: x-small;
+  font-family: monospace;
+  color: #AAAAAA;
+}
+
+ul.LC_parm_parmlist li {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  vertical-align: top;
+  width: 150px;
+  border-top:1px solid #C8C8C8;
+}
+
+td.LC_parm_overview_level_menu,
+td.LC_parm_overview_map_menu,
+td.LC_parm_overview_parm_selectors,
+td.LC_parm_overview_restrictions  {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.LC_parm_overview_restrictions td {
+  border-width: 1px 4px 1px 4px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  text-align: center;
+}
+
+table.LC_parm_overview_restrictions th {
+  background: #77B7F8;
+  border-width: 1px 4px 1px 4px;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+table#LC_helpmenu {
+  border: none;
+  height: 55px;
+  border-spacing: 0;
+}
+
+table#LC_helpmenu fieldset legend {
+  font-size: larger;
+}
+
+table#LC_helpmenu_links {
+  width: 100%;
+  border: 1px solid black;
+  background: #FFFFFF;
+  padding: 0;
+  border-spacing: 1px;
+}
+
+table#LC_helpmenu_links tr td {
+  padding: 1px;
+  background: #77B7F8;
+  text-align: center;
+  font-weight: bold;
+}
+
+table#LC_helpmenu_links a:link,
+table#LC_helpmenu_links a:visited,
+table#LC_helpmenu_links a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+table#LC_helpmenu_links a:hover {
+  text-decoration: underline;
+  color: #2D5896;
+}
+
+.LC_chrt_popup_exists {
+  border: 1px solid #339933;
+  margin: -1px;
+}
+
+.LC_chrt_popup_up {
+  border: 1px solid yellow;
+  margin: -1px;
+}
+
+.LC_chrt_popup {
+  border: 1px solid #8888FF;
+  background: #CCCCFF;
+}
+
+table.LC_pick_box {
+  border-collapse: separate;
+  background: white;
+  border: 1px solid black;
+  border-spacing: 1px;
+}
+
+table.LC_pick_box td.LC_pick_box_title {
+  background: #E5E5FF;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+  width: 184px;
+  padding: 8px;
+}
+
+table.LC_pick_box td.LC_pick_box_value {
+  text-align: left;
+  padding: 8px;
+}
+
+table.LC_pick_box td.LC_pick_box_select {
+  text-align: left;
+  padding: 8px;
+}
+
+table.LC_pick_box td.LC_pick_box_separator {
+  padding: 0;
+  height: 1px;
+  background: black;
+}
+
+table.LC_pick_box td.LC_pick_box_submit {
+  text-align: right;
+}
+
+table.LC_pick_box td.LC_evenrow_value {
+  text-align: left;
+  padding: 8px;
+  background-color: #FAFAFA;
+}
+
+table.LC_pick_box td.LC_oddrow_value {
+  text-align: left;
+  padding: 8px;
+  background-color: #FAFAFA;
+}
+
+span.LC_helpform_receipt_cat {
+  font-weight: bold;
+}
+
+table.LC_group_priv_box {
+  background: white;
+  border: 1px solid black;
+  border-spacing: 1px;
+}
+
+table.LC_group_priv_box td.LC_pick_box_title {
+  background: #77B7F8;
+  font-weight: bold;
+  text-align: right;
+  width: 184px;
+}
+
+table.LC_group_priv_box td.LC_groups_fixed {
+  background: #FAFAFA;
+  text-align: center;
+}
+
+table.LC_group_priv_box td.LC_groups_optional {
+  background: #E0E0E0;
+  text-align: center;
+}
+
+table.LC_group_priv_box td.LC_groups_functionality {
+  background: #CCCCCC;
+  text-align: center;
+  font-weight: bold;
+}
+
+table.LC_group_priv td {
+  text-align: left;
+  padding: 0;
+}
+
+.LC_navbuttons {
+  margin: 2ex 0ex 2ex 0ex;
+}
+
+.LC_topic_bar {
+  font-weight: bold;
+  background: #77B7F8;
+  margin: 1em 0em 1em 2em;
+  padding: 3px;
+  font-size: 1.2em;
+}
+
+.LC_topic_bar span {
+  left: 0.5em;
+  position: absolute;
+  vertical-align: middle;
+  font-size: 1.2em;
+}
+
+table.LC_course_group_status {
+  margin: 20px;
+}
+
+table.LC_status_selector td {
+  vertical-align: top;
+  text-align: center;
+  padding: 4px;
+}
+
+div.LC_feedback_link {
+  clear: both;
+  background: #E5E5FF;
+  width: 100%;
+  padding-bottom: 10px;
+  border: 1px #77B7F8 solid;
+  height: 22px;
+  line-height: 22px;
+  padding-top: 5px;
+}
+
+div.LC_feedback_link img {
+  height: 22px;
+  vertical-align:middle;
+}
+
+div.LC_feedback_link a {
+  text-decoration: none;
+}
+
+div.LC_comblock {
+  display:inline;
+  color:#000000;
+  font-size:90%;
+}
+
+div.LC_feedback_link div.LC_comblock {
+  padding-left:5px;
+}
+
+div.LC_feedback_link div.LC_comblock a {
+  color:#000000;
+}
+
+span.LC_feedback_link {
+  /* background: #BBBBBB; */
+  font-size: larger;
+}
+
+span.LC_message_link {
+  /* background: #BBBBBB; */
+  font-size: larger;
+  position: absolute;
+  right: 1em;
+}
+
+table.LC_prior_tries {
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+table.LC_prior_tries td {
+  padding: 2px;
+}
+
+.LC_answer_correct {
+  background: lightgreen;
+  color: darkgreen;
+  padding: 6px;
+}
+
+.LC_answer_charged_try {
+  background: #FFAAAA;
+  color: darkred;
+  padding: 6px;
+}
+
+.LC_answer_not_charged_try,
+.LC_answer_no_grade,
+.LC_answer_late {
+  background: lightyellow;
+  color: black;
+  padding: 6px;
+}
+
+.LC_answer_previous {
+  background: lightblue;
+  color: darkblue;
+  padding: 6px;
+}
+
+.LC_answer_no_message {
+  background: #FFFFFF;
+  color: black;
+  padding: 6px;
+}
+
+.LC_answer_unknown {
+  background: orange;
+  color: black;
+  padding: 6px;
+}
+
+span.LC_prior_numerical,
+span.LC_prior_string,
+span.LC_prior_custom,
+span.LC_prior_reaction,
+span.LC_prior_math {
+  font-family: monospace;
+  white-space: pre;
+}
+
+span.LC_prior_string {
+  font-family: monospace;
+  white-space: pre;
+}
+
+table.LC_prior_option {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.LC_prior_rank,
+table.LC_prior_match {
+  border-collapse: collapse;
+}
+
+table.LC_prior_option tr td,
+table.LC_prior_rank tr td,
+table.LC_prior_match tr td {
+  border: 1px solid #000000;
+}
+
+.LC_nobreak {
+  white-space: nowrap;
+}
+
+span.LC_cusr_emph {
+  font-style: italic;
+}
+
+span.LC_cusr_subheading {
+  font-weight: normal;
+  font-size: 85%;
+}
+
+div.LC_docs_entry_move {
+  border: 1px solid #BBBBBB;
+  background: #DDDDDD;
+  width: 22px;
+  padding: 1px;
+  margin: 0;
+}
+
+table.LC_data_table tr > td.LC_docs_entry_commands,
+table.LC_data_table tr > td.LC_docs_entry_parameter {
+  font-size: x-small;
+}
+
+.LC_docs_entry_parameter {
+  white-space: nowrap;
+}
+
+.LC_docs_copy {
+  color: #000099;
+}
+
+.LC_docs_cut {
+  color: #550044;
+}
+
+.LC_docs_rename {
+  color: #009900;
+}
+
+.LC_docs_remove {
+  color: #990000;
+}
+
+.LC_docs_reinit_warn,
+.LC_docs_ext_edit {
+  font-size: x-small;
+}
+
+table.LC_docs_adddocs td,
+table.LC_docs_adddocs th {
+  border: 1px solid #BBBBBB;
+  padding: 4px;
+  background: #DDDDDD;
+}
+
+table.LC_sty_begin {
+  background: #BBFFBB;
+}
+
+table.LC_sty_end {
+  background: #FFBBBB;
+}
+
+table.LC_double_column {
+  border-width: 0;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2px;
+}
+
+table.LC_double_column tr td.LC_left_col {
+  top: 2px;
+  left: 2px;
+  width: 47%;
+  vertical-align: top;
+}
+
+table.LC_double_column tr td.LC_right_col {
+  top: 2px;
+  right: 2px;
+  width: 47%;
+  vertical-align: top;
+}
+
+div.LC_left_float {
+  float: left;
+  padding-right: 5%;
+  padding-bottom: 4px;
+}
+
+div.LC_clear_float_header {
+  padding-bottom: 2px;
+}
+
+div.LC_clear_float_footer {
+  padding-top: 10px;
+  clear: both;
+}
+
+div.LC_grade_show_user {
+/*  border-left: 5px solid #E5E5FF; */
+  border-top: 5px solid #000000;
+  margin: 50px 0 0 0;
+  padding: 15px 0 5px 10px;
+}
+
+div.LC_grade_show_user_odd_row {
+/*  border-left: 5px solid #000000; */
+}
+
+div.LC_grade_show_user div.LC_Box {
+  margin-right: 50px;
+}
+
+div.LC_grade_submissions,
+div.LC_grade_message_center,
+div.LC_grade_info_links {
+  margin: 5px;
+  width: 99%;
+  background: #FFFFFF;
+}
+
+div.LC_grade_submissions_header,
+div.LC_grade_message_center_header {
+  font-weight: bold;
+  font-size: large;
+}
+
+div.LC_grade_submissions_body,
+div.LC_grade_message_center_body {
+  border: 1px solid black;
+  width: 99%;
+  background: #FFFFFF;
+}
+
+table.LC_scantron_action {
+  width: 100%;
+}
+
+table.LC_scantron_action tr th {
+  font-weight:bold;
+  font-style:normal;
+}
+
+.LC_edit_problem_header,
+div.LC_edit_problem_footer {
+  font-weight: normal;
+  font-size:  medium;
+  margin: 2px;
+  background-color: #E5E5FF;
+}
+
+div.LC_edit_problem_header,
+div.LC_edit_problem_header div,
+div.LC_edit_problem_footer,
+div.LC_edit_problem_footer div,
+div.LC_edit_problem_editxml_header,
+div.LC_edit_problem_editxml_header div {
+  z-index: 100;
+}
+
+div.LC_edit_problem_header_title {
+  font-weight: bold;
+  font-size: larger;
+  background: #77B7F8;
+  padding: 3px;
+  margin: 0 0 5px 0;
+}
+
+table.LC_edit_problem_header_title {
+  width: 100%;
+  background: #77B7F8;
+}
+
+div.LC_edit_actionbar {
+    background-color: #E5E5FF;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+
+div.LC_edit_actionbar div{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.LC_edit_opt {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+
+.LC_edit_problem_latexhelper{
+    text-align: right;
+}
+
+#LC_edit_problem_colorful div{
+    margin-left: 40px;
+}
+
+#LC_edit_problem_codemirror div{
+    margin-left: 0px;
+}
+
+img.stift {
+  border-width: 0;
+  vertical-align: middle;
+}
+
+table td.LC_mainmenu_col_fieldset {
+  vertical-align: top;
+}
+
+div.LC_createcourse {
+  margin: 10px 10px 10px 10px;
+}
+
+.LC_dccid {
+  float: right;
+  margin: 0.2em 0 0 0;
+  padding: 0;
+  font-size: 90%;
+  display:none;
+}
+
+ol.LC_primary_menu a:hover,
+ol#LC_MenuBreadcrumbs a:hover,
+ol#LC_PathBreadcrumbs a:hover,
+ul#LC_secondary_menu a:hover,
+.LC_FormSectionClearButton input:hover
+ul.LC_TabContent   li:hover a {
+  color:#BF2317;
+  text-decoration:none;
+}
+
+h1 {
+  padding: 0;
+  line-height:130%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  line-height:130%;
+}
+
+.LC_hcell {
+  padding:3px 15px 3px 15px;
+  margin: 0;
+  background-color:#77B7F8;
+  color:#11063D;
+  border-bottom:solid 1px #C8C8C8;
+}
+
+.LC_Box > .LC_hcell {
+  margin: 0 -10px 10px -10px;
+}
+
+.LC_noBorder {
+  border: 0;
+}
+
+.LC_FormSectionClearButton input {
+  background-color:transparent;
+  border: none;
+  cursor:pointer;
+  text-decoration:underline;
+}
+
+.LC_help_open_topic {
+  color: #FFFFFF;
+  background-color: #EEEEFF;
+  margin: 1px;
+  padding: 4px;
+  border: 1px solid #000033;
+  white-space: nowrap;
+  /* vertical-align: middle; */
+}
+
+dl,
+ul,
+div,
+fieldset {
+  margin: 10px 10px 10px 0;
+  /* overflow: hidden; */
+}
+
+article.geogebraweb div {
+    margin: 0;
+}
+
+fieldset > legend {
+  font-weight: bold;
+  padding: 0 5px 0 5px;
+}
+
+#LC_nav_bar {
+  float: left;
+  background-color: #ffffff;
+  margin: 0 0 2px 0;
+}
+
+#LC_realm {
+  margin: 0.2em 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#LC_nav_bar em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+ol.LC_primary_menu {
+  margin: 0;
+  padding: 0;
+}
+
+ol#LC_PathBreadcrumbs {
+  margin: 0;
+}
+
+ol.LC_primary_menu li {
+  color: RGB(80, 80, 80);
+  vertical-align: middle;
+  text-align: left;
+  list-style: none;
+  position: relative;
+  float: left;
+  z-index: 100; /* will be displayed above codemirror and underneath the help-layer */
+  line-height: 1.5em;
+}
+
+ol.LC_primary_menu li a, 
+ol.LC_primary_menu li p {
+  display: block;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  text-decoration: none;
+}
+
+ol.LC_primary_menu li p span.LC_primary_menu_innertitle {
+  display: inline-block;
+  width: 95%;
+  text-align: left;
+}
+
+ol.LC_primary_menu li p span.LC_primary_menu_innerarrow {
+  display: inline-block;
+  width: 5%;
+  float: right;
+  text-align: right;
+  font-size: 70%;
+}
+
+ol.LC_primary_menu ul {
+  display: none;
+  width: 15em;
+  background-color: #FAFAFA;
+  position: absolute;
+  top: 100%;
+}
+
+ol.LC_primary_menu ul ul {
+  left: 100%;
+  top: 0;
+}
+
+ol.LC_primary_menu li:hover > ul, ol.LC_primary_menu li.hover > ul {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+ol.LC_primary_menu li:hover li, ol.LC_primary_menu li.hover li {
+/* First Submenu -> size should be smaller than the menu title of the whole menu */
+  font-size: 90%;
+  vertical-align: top;
+  float: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+/* A dark bottom border to visualize different menu options;
+overwritten in the create_submenu routine for the last border-bottom of the menu */
+  border-bottom: 1px solid #E0E0E0;
+}
+
+ol.LC_primary_menu li li p:hover {
+  color:#BF2317;
+  text-decoration:none;
+  background-color:#E0E0E0;
+}
+
+ol.LC_primary_menu li li a:hover {
+   color:#BF2317;
+   background-color:#E0E0E0;
+}
+
+/* Font-size equal to the size of the predecessors*/
+ol.LC_primary_menu li:hover li li {
+  font-size: 100%;
+}
+
+ol.LC_primary_menu li img {
+  vertical-align: bottom;
+  height: 1.1em;
+  margin: 0.2em 0 0 0;
+}
+
+ol.LC_primary_menu a {
+  color: RGB(80, 80, 80);
+  text-decoration: none;
+}
+
+ol.LC_primary_menu a.LC_new_message {
+  font-weight:bold;
+  color: darkred;
+}
+
+ol.LC_docs_parameters {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ol.LC_docs_parameters li {
+  margin: 0;
+  padding-right: 20px;
+  display: inline;
+}
+
+ol.LC_docs_parameters li:before {
+  content: "\002022 \0020";
+}
+
+li.LC_docs_parameters_title {
+  font-weight: bold;
+}
+
+ol.LC_docs_parameters li.LC_docs_parameters_title:before {
+  content: "";
+}
+
+ul#LC_secondary_menu {
+  clear: right;
+  color: #11063D;
+  background: #77B7F8;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  float: left;
+}
+
+ul#LC_secondary_menu li {
+  font-weight: bold;
+  line-height: 1.8em;
+  border-right: 1px solid black;
+  float: left;
+}
+
+ul#LC_secondary_menu li.LC_hoverable:hover, ul#LC_secondary_menu li.hover {
+  background-color: #FAFAFA;
+}
+
+ul#LC_secondary_menu li a {
+  padding: 0 0.8em;
+}
+
+ul#LC_secondary_menu li ul {
+  display: none;
+}
+
+ul#LC_secondary_menu li:hover ul, ul#LC_secondary_menu li.hover ul {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  float: none;
+  background-color: #FAFAFA;
+  z-index: 2;
+  margin-left: -1px;
+}
+
+ul#LC_secondary_menu li ul li {
+  font-size: 90%;
+  vertical-align: top;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #FAFAFA;
+  list-style:none;
+  float: none;
+}
+
+ul#LC_secondary_menu li ul li:hover, ul#LC_secondary_menu li ul li.hover {
+  background-color: #E0E0E0;
+}
+
+ul.LC_TabContent {
+  display:block;
+  background: #E5E5FF;
+  border-bottom: solid 1px #C8C8C8;
+  list-style:none;
+  margin: -1px -10px 0 -10px;
+  padding: 0;
+}
+
+ul.LC_TabContent li,
+ul.LC_TabContentBigger li {
+  float:left;
+}
+
+ul#LC_secondary_menu li a {
+  color: #11063D;
+  text-decoration: none;
+}
+
+ul.LC_TabContent {
+  min-height:20px;
+}
+
+ul.LC_TabContent li {
+  vertical-align:middle;
+  padding: 0 16px 0 10px;
+  background-color:#77B7F8;
+  border-bottom:solid 1px #C8C8C8;
+  border-left: solid 1px #000000;
+}
+
+ul.LC_TabContent .right {
+  float:right;
+}
+
+ul.LC_TabContent li a,
+ul.LC_TabContent li {
+  color:rgb(47,47,47);
+  text-decoration:none;
+  font-size:95%;
+  font-weight:bold;
+  min-height:20px;
+}
+
+ul.LC_TabContent li a:hover,
+ul.LC_TabContent li a:focus {
+  color: #BF2317;
+  background:none;
+  outline:none;
+}
+
+ul.LC_TabContent li:hover {
+  color: #BF2317;
+  cursor:pointer;
+}
+
+ul.LC_TabContent li.active {
+  color: #000000;
+  background:#FFFFFF url(/adm/lonIcons/open.gif) no-repeat scroll right center;
+  border-bottom:solid 1px #FFFFFF;
+  cursor: default;
+}
+
+ul.LC_TabContent li.active a {
+  color:#000000;
+  background:#FFFFFF;
+  outline: none;
+}
+
+ul.LC_TabContent li.goback {
+  float: left;
+  border-left: none;
+}
+
+#maincoursedoc {
+  clear:both;
+}
+
+ul.LC_TabContentBigger {
+  display:block;
+  list-style:none;
+  padding: 0;
+}
+
+ul.LC_TabContentBigger li {
+  vertical-align:bottom;
+  height: 30px;
+  font-size:110%;
+  font-weight:bold;
+  color: #737373;
+}
+
+ul.LC_TabContentBigger li.active {
+  position: relative;
+  top: 1px;
+}
+
+ul.LC_TabContentBigger li a {
+  background:url('/adm/lonIcons/tabbgleft.gif') left bottom no-repeat;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  outline: none;  
+}
+
+ul.LC_TabContentBigger li.active a {
+  background:url('/adm/lonIcons/tabbgleft.gif') left top no-repeat;
+  color:#000000;
+}
+
+ul.LC_TabContentBigger li b {
+  background: url('/adm/lonIcons/tabbgright.gif') no-repeat right bottom;
+  display: block;
+  float: left;
+  padding: 0 30px;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+ul.LC_TabContentBigger li:hover b {
+  color:#BF2317;
+}
+
+ul.LC_TabContentBigger li.active b {
+  background:url('/adm/lonIcons/tabbgright.gif') right top no-repeat;
+  color:#000000;
+  border: 0;
+}
+
+
+ul.LC_CourseBreadcrumbs {
+  background: #E5E5FF;
+  height: 2em;
+  padding-left: 10px;
+  margin: 0;
+  list-style-position: inside;
+}
+
+ol#LC_MenuBreadcrumbs,
+ol#LC_PathBreadcrumbs {
+  padding-left: 10px;
+  margin: 0;
+  height: 2.5em;  /* equal to #LC_breadcrumbs line-height */
+}
+
+ol#LC_MenuBreadcrumbs li,
+ol#LC_PathBreadcrumbs li,
+ul.LC_CourseBreadcrumbs li {
+  display: inline;
+  white-space: normal;  
+}
+
+ol#LC_MenuBreadcrumbs li a,
+ul.LC_CourseBreadcrumbs li a {
+  text-decoration: none;
+  font-size:90%;
+}
+
+ol#LC_MenuBreadcrumbs h1 {
+  display: inline;
+  font-size: 90%;
+  line-height: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+
+ol#LC_PathBreadcrumbs li a {
+  text-decoration:none;
+  font-size:100%;
+  font-weight:bold;
+}
+
+.LC_Box {
+  border: solid 1px #C8C8C8;
+  padding: 0 10px 10px 10px;
+}
+
+.LC_DocsBox {
+  border: solid 1px #C8C8C8;
+  padding: 0 0 10px 10px;
+}
+
+.LC_AboutMe_Image {
+  float:left;
+  margin-right:10px;
+}
+
+.LC_Clear_AboutMe_Image {
+  clear:left;
+}
+
+dl.LC_ListStyleClean dt {
+  padding-right: 5px;
+  display: table-header-group;
+}
+
+dl.LC_ListStyleClean dd {
+  display: table-row;
+}
+
+.LC_ListStyleClean,
+.LC_ListStyleSimple,
+.LC_ListStyleNormal,
+.LC_ListStyleSpecial {
+  /* display:block; */
+  list-style-position: inside;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.LC_ListStyleSimple li,
+.LC_ListStyleSimple dd,
+.LC_ListStyleNormal li,
+.LC_ListStyleNormal dd,
+.LC_ListStyleSpecial li,
+.LC_ListStyleSpecial dd {
+  margin: 0;
+  padding: 5px 5px 5px 10px;
+  clear: both;
+}
+
+.LC_ListStyleClean li,
+.LC_ListStyleClean dd {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.LC_ListStyleSimple dd,
+.LC_ListStyleSimple li {
+  border-bottom: solid 1px #C8C8C8;
+}
+
+.LC_ListStyleSpecial li,
+.LC_ListStyleSpecial dd {
+  list-style-type: none;
+  background-color: RGB(220, 220, 220);
+  margin-bottom: 4px;
+}
+
+table.LC_SimpleTable {
+  margin:5px;
+  border:solid 1px #C8C8C8;
+}
+
+table.LC_SimpleTable tr {
+  padding: 0;
+  border:solid 1px #C8C8C8;
+}
+
+table.LC_SimpleTable thead {
+  background:rgb(220,220,220);
+}
+
+div.LC_columnSection {
+  display: block;
+  clear: both;
+  overflow: hidden;
+  margin: 0;
+}
+
+div.LC_columnSection>* {
+  float: left;
+  margin: 10px 20px 10px 0;
+  overflow:hidden;
+}
+
+table em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+table.LC_tableBrowseRes,
+table.LC_tableOfContent {
+  border:none;
+  border-spacing: 1px;
+  padding: 3px;
+  background-color: #FFFFFF;
+  font-size: 90%;
+}
+
+table.LC_tableOfContent {
+  border-collapse: collapse;
+}
+
+table.LC_tableBrowseRes a,
+table.LC_tableOfContent a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+table.LC_tableOfContent img {
+  border: none;
+  height: 1.3em;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+}
+
+a#LC_content_toolbar_firsthomework {
+  background-image:url(/res/adm/pages/open-first-problem.gif);
+}
+
+a#LC_content_toolbar_everything {
+  background-image:url(/res/adm/pages/show-all.gif);
+}
+
+a#LC_content_toolbar_uncompleted {
+  background-image:url(/res/adm/pages/show-incomplete-problems.gif);
+}
+
+#LC_content_toolbar_clearbubbles {
+  background-image:url(/res/adm/pages/mark-discussionentries-read.gif);
+}
+
+a#LC_content_toolbar_changefolder {
+  background : url(/res/adm/pages/close-all-folders.gif) top center ;
+}
+
+a#LC_content_toolbar_changefolder_toggled {
+  background-image:url(/res/adm/pages/open-all-folders.gif);
+}
+
+a#LC_content_toolbar_edittoplevel {
+  background-image:url(/res/adm/pages/edittoplevel.gif);
+}
+
+ul#LC_toolbar li a:hover {
+  background-position: bottom center;
+}
+
+ul#LC_toolbar {
+  padding: 0;
+  margin: 2px;
+  list-style:none;
+  position:relative;
+  background-color:white;
+  overflow: auto;
+}
+
+ul#LC_toolbar li {
+  border:1px solid white;
+  padding: 0;
+  margin: 0;
+  float: left;
+  display:inline;
+  vertical-align:middle;
+  white-space: nowrap;
+}
+
+
+a.LC_toolbarItem {
+  display:block;
+  padding: 0;
+  margin: 0;
+  height: 32px;
+  width: 32px;
+  color:white;
+  border: none;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+
+ul.LC_funclist {
+    margin: 0;
+    padding: 0.5em 1em 0.5em 0;
+}
+
+ul.LC_funclist > li:first-child {
+    font-weight:bold; 
+    margin-left:0.8em;
+}
+
+ul.LC_funclist + ul.LC_funclist {
+    /* 
+       left border as a seperator if we have more than
+       one list 
+    */
+    border-left: 1px solid #E5E5FF;
+    /* 
+       this hides the left border behind the border of the 
+       outer box if element is wrapped to the next 'line' 
+    */
+    margin-left: -1px;
+}
+
+ul.LC_funclist li {
+  display: inline;
+  white-space: nowrap;
+  margin: 0 0 0 25px;
+  line-height: 150%;
+}
+
+.LC_hidden {
+  display: none;
+}
+
+.LCmodal-overlay {
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		height:100%;
+		width:100%;
+		margin:0;
+		padding:0;
+		background:#999;
+		opacity:.75;
+		filter: alpha(opacity=75);
+		-moz-opacity: 0.75;
+		z-index:101;
+}
+
+* html .LCmodal-overlay {   
+		position: absolute;
+		height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+.LCmodal-window {
+		position:fixed;
+		top:50%;
+		left:50%;
+		margin:0;
+		padding:0;
+		z-index:102;
+	}
+
+* html .LCmodal-window {
+		position:absolute;
+}
+
+.LCclose-window {
+		position:absolute;
+		width:32px;
+		height:32px;
+		right:8px;
+		top:8px;
+		background:transparent url('/res/adm/pages/process-stop.png') no-repeat scroll right top;
+		text-indent:-99999px;
+		overflow:hidden;
+		cursor:pointer;
+}
+
+/*
+  styles used by TTH when "Default set of options to pass to tth/m
+  when converting TeX" in course settings has been set
+
+  option passed: -t
+
+*/
+
+td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+td div.norm {line-height:normal;}
+
+/*
+  option passed -y3
+*/
+
+span.roman {font-family: serif; font-style: normal; font-weight: normal;}
+span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+span.overacc1 {position: relative;  left: .6em; top: -1.2ex;}
+
+#LC_minitab_header {
+  float:left;
+  width:100%;
+  background:#DAE0D2 url("/res/adm/pages/minitabmenu_bg.gif") repeat-x bottom;
+  font-size:93%;
+  line-height:normal;
+  margin: 0.5em 0 0.5em 0;
+}
+#LC_minitab_header ul {
+  margin:0;
+  padding:10px 10px 0;
+  list-style:none;
+}
+#LC_minitab_header li {
+  float:left;
+  background:url("/res/adm/pages/minitabmenu_left.gif") no-repeat left top;
+  margin:0;
+  padding:0 0 0 9px;
+}
+#LC_minitab_header a {
+  display:block;
+  background:url("/res/adm/pages/minitabmenu_right.gif") no-repeat right top;
+  padding:5px 15px 4px 6px;
+}
+#LC_minitab_header #LC_current_minitab {
+  background-image:url("/res/adm/pages/minitabmenu_left_on.gif");
+}
+#LC_minitab_header #LC_current_minitab a {
+  background-image:url("/res/adm/pages/minitabmenu_right_on.gif");
+  padding-bottom:5px;
+}
+
+
