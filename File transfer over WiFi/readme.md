@@ -1,5 +1,4 @@
-##File Transfer Script
----
+## File Transfer Script
 
 <sub>PS: I personally don't consider this one a script but it is simple and useful, so it is here.</sub>
 
@@ -13,13 +12,13 @@ This script allows you to transfer a file over the http download protocol with t
       ```
       $python -m SimpleHTTPServer 8080
       ```
-      * Python 3.x
-        ```
-        $python -m http.server 8080
-        ```
+    * Python 3.x
+      ```
+      $python -m http.server 8080
+      ```
   + You are now server the file over your network. This file can be accessed by other devices on your network by using the IP Address of your serving device. The IP Address can be obtained by using the `ipconfig` command and getting the "IPv4 Address". For example an internal IP Address looks like "192.168.0.31".
   + You can finally access your file on the desired device just by typing in this address and putting a `:8080` after the address. So finally your address should look like "192.168.0.31:8080"
 ---
 
-###Disclaimer
+### Disclaimer
 This is not a secure way to transfer files over a network as anyone on the network has access to them while the server is up and running. If secure file transfer is something you are looking for, then look into finished products like Push Bullet.
